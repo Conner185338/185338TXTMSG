@@ -1,8 +1,8 @@
-/*
-Conner Warboys
-Short Form Translator Project
-March 28th, 2019
-*/
+﻿/*
+ * Conner Warboys
+ * Converts short forms to long form
+ * March 28th, 2019
+ */
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,13 +48,12 @@ namespace _185338TxtMSG
             textInput = textInput.Replace("TTYL", "Talk to you later" + Environment.NewLine);
             textInput = textInput.Replace("TY","Thank you" + Environment.NewLine);
             textInput = textInput.Replace("YW", "You're welcome" + Environment.NewLine);
-            
-            if (txtInput.Text == "TTYL")
-            {
-                this.Close();
-            }
 
             lblOutput.Content = " " + textInput;
+            if (txtInput.Text.Contains("TTYL"))
+            {
+                Environment.Exit(0);
+            }
 
                 
 
