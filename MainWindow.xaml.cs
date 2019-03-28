@@ -50,7 +50,7 @@ namespace _185338TxtMSG
             textInput = textInput.Replace("YW", "You're welcome" + Environment.NewLine);
 
             lblOutput.Content = " " + textInput;
-            if (txtInput.Text.Contains("TTYL"))
+            if (txtInput.Text.ToUpper().Contains("TTYL"))
             {
                 Environment.Exit(0);
             }
