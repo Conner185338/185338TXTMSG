@@ -1,4 +1,9 @@
-﻿using System;
+/*
+Conner Warboys
+Short Form Translator Project
+March 28th, 2019
+*/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
