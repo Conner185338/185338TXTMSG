@@ -35,7 +35,9 @@ namespace _185338TxtMSG
             string textInput = txtInput.Text;
 
             textInput = txtInput.Text.ToUpper();
-
+            /* Allows program to recognize the short whether it is capitalized or
+               lower case
+            */
             textInput = textInput.Replace("CUZ", "Because" + Environment.NewLine);
             textInput = textInput.Replace("CU","See you" + Environment.NewLine);
             textInput = textInput.Replace(":-)","I'm happy" + Environment.NewLine);
@@ -48,12 +50,17 @@ namespace _185338TxtMSG
             textInput = textInput.Replace("TTYL", "Talk to you later" + Environment.NewLine);
             textInput = textInput.Replace("TY","Thank you" + Environment.NewLine);
             textInput = textInput.Replace("YW", "You're welcome" + Environment.NewLine);
+            /* Tells program to replace the shortform with the long form and then add a 
+               new line
+            */
 
             lblOutput.Content = " " + textInput;
             if (txtInput.Text.ToUpper().Contains("TTYL"))
             {
                 Environment.Exit(0);
             }
+            /* If statement Makeing the program end when the shortform TTYL is entered
+            */
 
                 
 
